@@ -1,0 +1,27 @@
+- task: DownloadGitHubRelease@0
+  inputs:
+    connection: 'EmmanuelVergnaud'
+    userRepository: 'MonRepoPublic'
+    defaultVersionType: 'latest'
+    downloadPath: '$(System.ArtifactsDirectory)'
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.BinariesDirectory)'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      
+      Write-Host "Hello World"
+    errorActionPreference: 'continue'
+
+- task: GitHubComment@0
+    inputs:
+      gitHubConnection: 'EmmanuelVergnaud'
+      repositoryName: 'MonRepoPublic'
+      comment: 'Coucou from yaml'
