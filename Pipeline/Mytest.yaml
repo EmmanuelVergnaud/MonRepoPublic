@@ -26,8 +26,4 @@ jobs:
               Write-Host "Hello World"
             errorActionPreference: 'continue'
 
-        - task: GitHubComment@0
-            inputs:
-              gitHubConnection: 'EmmanuelVergnaud'
-              repositoryName: 'MonRepoPublic'
-              comment: 'Coucou from yaml'
+
