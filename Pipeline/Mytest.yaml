@@ -1,3 +1,4 @@
+Ceci a été écrit depuis brancheRebase
 jobs:
     - job: MyTestPipeline
       pool:
