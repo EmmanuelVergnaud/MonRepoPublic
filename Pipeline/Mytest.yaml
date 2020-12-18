@@ -1,7 +1,6 @@
-Ceci a été écrit de la branche master
 jobs:
     - job: MyTestPipeline
-      pool:
+      pool:MasterMasterMasterMasterMaster
         vmImage: 'ubuntu-latest'
       steps:
         - script: echo hello from Linux
