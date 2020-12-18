@@ -1,6 +1,5 @@
-Ceci a été écrit depuis brancheRebase
 jobs:
-    - job: MyTestPipeline
+    - job: Nouvelle Ligne depuis TestRebase
       pool:
         vmImage: 'ubuntu-latest'
       steps:
