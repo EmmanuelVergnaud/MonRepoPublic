@@ -1,7 +1,7 @@
 jobs:
     - job: MyTestPipeline
         vmImage: 'ubuntu-latest'
-      steps:
+      steps:(fait depuis master)
         - script: echo hello from Linux
         - task: DownloadGitHubRelease@0
           inputs:
