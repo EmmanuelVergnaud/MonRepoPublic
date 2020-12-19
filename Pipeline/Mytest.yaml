@@ -1,5 +1,5 @@
 jobs:
-    - job: MyTestPipeline (ajout depuis testBranche)
+    - job: MyTestPipeline
         vmImage: 'ubuntu-latest'
       steps:
         - script: echo hello from Linux
