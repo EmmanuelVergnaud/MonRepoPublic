@@ -1,6 +1,6 @@
 jobs:
-    - job: Nouvelle Ligne depuis TestRebase
-      pool:
+    - job: MyTestPipeline
+      pool:Nouvelle Ligne depuis TestRebase
         vmImage: 'ubuntu-latest'
       steps:
         - script: echo hello from Linux
