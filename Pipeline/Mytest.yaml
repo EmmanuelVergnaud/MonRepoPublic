@@ -1,6 +1,5 @@
 jobs:
     - job: MyTestPipeline
-      pool:MasterMasterMasterMasterMaster
         vmImage: 'ubuntu-latest'
       steps:
         - script: echo hello from Linux
