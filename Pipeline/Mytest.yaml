@@ -4,7 +4,7 @@ jobs:
       steps:
         - script: echo hello from Linux
         - task: DownloadGitHubRelease@0
-          inputs:
+          inputs:COCOCO
             connection: 'EmmanuelVergnaud'
             userRepository: 'MonRepoPublic'
             defaultVersionType: 'latest'
